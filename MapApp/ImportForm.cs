@@ -72,8 +72,8 @@ namespace MapApp
                     try
                     {
                         //convert video file
-                        //var ffMpeg = new NReco.VideoConverter.FFMpegConverter();
-                        //ffMpeg.ConvertMedia(inputPath + ridePath + "\\pi" + j.ToString() + "\\video1.h264", writePath + "\\videoOut1.mp4", Format.mp4);
+                        var ffMpeg = new NReco.VideoConverter.FFMpegConverter();
+                        ffMpeg.ConvertMedia(inputPath + ridePath + "\\pi" + j.ToString() + "\\video1.h264", writePath + "\\videoOut1.mp4", Format.mp4);
                     }
                     catch { }
 
